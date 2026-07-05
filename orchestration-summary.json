@@ -161,7 +161,8 @@
       "uiKitPath": null,
       "componentPlan": [],
       "imagePlan": [
-        "oratile-about-portrait.png"
+        "oratile-about-portrait.png",
+        "oratile-logo.jpg"
       ],
       "chartsRequired": false,
       "miniProgramStyle": false,
@@ -185,6 +186,13 @@
       "role": "supporting-content",
       "owningPage": "index-about-portrait",
       "semanticDescription": "Still portrait of Oratile Mogajane for the About section of the updated comparison page.",
+      "status": "reused"
+    },
+    {
+      "filename": "oratile-logo.jpg",
+      "role": "brand-identity",
+      "owningPage": "index-about-portrait",
+      "semanticDescription": "Uploaded Oratile Coaching logo used in the site header.",
       "status": "reused"
     }
   ],

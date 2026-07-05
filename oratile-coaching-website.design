@@ -40,10 +40,24 @@
       "createdAt": 1783242940000,
       "canvasData": {
         "x": 0,
-        "y": 1845
+        "y": 1910
       },
       "devMetadata": {
         "imageSrc": "assets/oratile-about-portrait.png"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "Oratile Logo",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1783246600000,
+      "canvasData": {
+        "x": 620,
+        "y": 1910
+      },
+      "devMetadata": {
+        "imageSrc": "assets/oratile-logo.jpg"
       }
     }
   ],

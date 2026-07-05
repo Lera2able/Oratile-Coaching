@@ -76,7 +76,7 @@
     <header class="site-header">
       <div class="container">
         <div class="brand">
-          <span class="brand-mark">Oratile Coaching</span>
+          <img class="brand-logo" src="../assets/oratile-logo.jpg" alt="Oratile Coaching logo">
           <span class="brand-sub">eMalahleni, Mpumalanga</span>
         </div>
         <nav class="header-nav" aria-label="Primary">
@@ -99,6 +99,13 @@
               <span>Warm, grounded practice</span>
               <span>Founded by Oratile Mogajane</span>
             </div>
+            <figure class="motion-card hero-motion-top">
+              <div class="motion-frame">
+                <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Looping hero video of Oratile Mogajane" defaultMuted>
+                  <source src="https://cdn.jsdelivr.net/gh/Lera2able/Oratile-Coaching@main/assets/oratile-hero-loop.mp4" type="video/mp4">
+                </video>
+              </div>
+            </figure>
             <figure class="emblem-card emblem-card-inline" aria-label="Mind-tree emblem">
               <svg class="hero-emblem" viewBox="0 0 320 320" role="img" aria-labelledby="emblem-title emblem-desc">
                 <title id="emblem-title">Mind-tree emblem</title>
@@ -132,17 +139,6 @@
               <a class="button-primary" href="#contact">Book a conversation</a>
               <a class="button-link" href="#about">Meet Oratile</a>
             </div>
-          </div>
-
-          <div class="hero-visual reveal">
-            <figure class="motion-card">
-              <div class="motion-frame">
-                <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Looping hero video of Oratile Mogajane" defaultMuted>
-                  <source src="https://cdn.jsdelivr.net/gh/Lera2able/Oratile-Coaching@main/assets/oratile-hero-loop.mp4" type="video/mp4">
-                </video>
-              </div>
-            </figure>
-
           </div>
         </div>
       </section>
@@ -508,11 +504,10 @@
       gap: 0.2rem;
     }
 
-    .brand-mark {
-      font-family: var(--display);
-      font-size: 1.2rem;
-      letter-spacing: 0.03em;
-      color: var(--navy);
+    .brand-logo {
+      width: clamp(7.5rem, 14vw, 10rem);
+      height: auto;
+      object-fit: contain;
     }
 
     .brand-sub {
@@ -616,15 +611,16 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.62fr);
-      gap: clamp(2rem, 3vw, 3.5rem);
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 4vw, 3rem);
       align-items: center;
     }
 
     .hero-copy {
       display: grid;
       gap: 1.35rem;
-      max-width: 39rem;
+      max-width: 44rem;
+      margin-inline: auto;
     }
 
     .hero-copy .eyebrow {
@@ -664,7 +660,7 @@
       font-weight: 300;
       line-height: 1.02;
       letter-spacing: -0.04em;
-      max-width: 10ch;
+      max-width: 9ch;
       padding-bottom: 0.12em;
     }
 
@@ -713,28 +709,6 @@
     .button-link:focus-visible {
       color: #ffffff;
       text-decoration-color: var(--gold-soft);
-    }
-
-    .hero-visual {
-      position: relative;
-      display: grid;
-      justify-items: center;
-      gap: 1.5rem;
-      width: min(100%, 28rem);
-      margin-left: auto;
-    }
-
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      width: min(32rem, 80%);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(var(--gold-rgb), 0.22), transparent 62%);
-      filter: blur(24px);
-      opacity: 0.85;
-      top: 1.2rem;
-      z-index: 0;
     }
 
     .emblem-card,
@@ -835,12 +809,17 @@
 
     .motion-card {
       width: min(24rem, 100%);
-      margin-left: auto;
-      transform: translateY(-1.6rem);
+      margin-left: 0;
+      transform: none;
     }
 
     .motion-card.is-hidden {
       display: none;
+    }
+
+    .hero-motion-top {
+      width: min(100%, 19rem);
+      margin-bottom: 0.15rem;
     }
 
     .motion-frame {
@@ -1298,16 +1277,9 @@
     }
 
     @media (max-width: 1100px) {
-      .hero-grid,
       .about-grid,
       .footer-grid {
         grid-template-columns: 1fr;
-      }
-
-      .motion-card {
-        margin-left: 0;
-        width: min(24rem, 88%);
-        transform: translateY(0);
       }
 
       .hero-copy {
@@ -1387,6 +1359,11 @@
         text-align: center;
       }
 
+      .brand-logo {
+        width: min(11rem, 52vw);
+        margin-inline: auto;
+      }
+
       .emblem-card-inline {
         margin-inline: auto;
       }
@@ -1421,12 +1398,6 @@
         width: 100%;
       }
 
-      .hero-visual {
-        width: 100%;
-        max-width: 22rem;
-        margin-inline: auto;
-      }
-
       .emblem-card,
       .motion-card {
         width: 100%;
@@ -1434,6 +1405,11 @@
 
       .emblem-card {
         padding: 0.95rem;
+      }
+
+      .hero-motion-top {
+        max-width: 18rem;
+        margin-inline: auto;
       }
 
       .emblem-caption,
