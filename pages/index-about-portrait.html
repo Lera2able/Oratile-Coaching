@@ -138,8 +138,10 @@
             </figure>
 
             <figure class="motion-card">
-              <div class="motion-frame motion-frame-portrait">
-                <img class="hero-portrait" src="../assets/oratile-about-portrait.png" alt="Portrait of Oratile Mogajane">
+              <div class="motion-frame">
+                <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Animated portrait of Oratile Mogajane">
+                  <source src="../assets/oratile-portrait-motion.mp4" type="video/mp4">
+                </video>
               </div>
               <figcaption class="motion-caption">Presence shaped by reflection, leadership, and grounded work.</figcaption>
             </figure>
@@ -859,24 +861,6 @@
       background: linear-gradient(180deg, rgba(243, 194, 100, 0.12), rgba(255,255,255,0.02));
     }
 
-    .motion-frame-portrait {
-      display: grid;
-      place-items: center;
-      padding: 1rem;
-      min-height: 29rem;
-      background:
-        radial-gradient(circle at top, rgba(var(--gold-rgb), 0.22), transparent 40%),
-        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-    }
-
-    .hero-portrait {
-      width: 100%;
-      max-width: 22rem;
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-      filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.18));
-    }
-
     .motion-caption {
       margin-top: 1rem;
       text-align: right;
@@ -1316,10 +1300,6 @@
         margin-left: 0;
         width: min(24rem, 88%);
         transform: translateY(0);
-      }
-
-      .motion-frame-portrait {
-        min-height: 24rem;
       }
 
       .hero-copy {
