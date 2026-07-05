@@ -106,7 +106,7 @@
                 </video>
               </div>
             </figure>
-            <h1 class="hero-title">Grow your mind.<span class="accent-italic">Transform your life.</span></h1>
+            <h1 class="hero-title"><span class="hero-title-line">Grow your mind</span><span class="accent-italic hero-title-line">Transform your life</span></h1>
             <p>
               Personal and leadership coaching for people carrying real responsibility. Rooted in lived experience across engineering, mining leadership, farming, and certified coaching, the practice helps clients think clearly, lead steadily, and grow with intention.
             </p>
@@ -594,8 +594,10 @@
     .hero-copy {
       display: grid;
       gap: 1.05rem;
-      max-width: 52rem;
+      max-width: 62rem;
       margin-inline: auto;
+      justify-items: center;
+      text-align: center;
     }
 
     .hero-copy .eyebrow {
@@ -604,8 +606,9 @@
 
     .hero-copy p {
       color: rgba(238, 242, 251, 0.82);
-      max-width: 44rem;
+      max-width: 52rem;
       font-size: 1.1rem;
+      margin-top: 1.45rem;
     }
 
     .hero-kicker {
@@ -613,6 +616,7 @@
       flex-wrap: wrap;
       gap: 0.8rem;
       align-items: center;
+      justify-content: center;
       color: rgba(255,255,255,0.78);
       font-size: 0.95rem;
     }
@@ -635,14 +639,18 @@
       font-weight: 300;
       line-height: 1.02;
       letter-spacing: -0.04em;
-      max-width: 10.5ch;
+      max-width: 12ch;
       padding-bottom: 0.12em;
+    }
+
+    .hero-title-line {
+      display: block;
     }
 
     .hero-title .accent-italic {
       display: block;
       font-size: 0.86em;
-      margin-top: 0.2em;
+      margin-top: 0.34em;
       line-height: 1.04;
     }
 
@@ -651,6 +659,7 @@
       flex-wrap: wrap;
       gap: 1.15rem;
       align-items: center;
+      justify-content: center;
       margin-top: 0.2rem;
     }
 
@@ -795,6 +804,7 @@
     .hero-motion-top {
       width: min(100%, 20rem);
       margin-bottom: 0.45rem;
+      margin-inline: auto;
     }
 
     .motion-frame {
