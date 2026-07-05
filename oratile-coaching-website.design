@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": "page-index",
+      "title": "Home",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1783242500000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "page-index-about-portrait",
+      "title": "Home - About Portrait",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1783242940000,
+      "canvasData": {
+        "x": 620,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index-about-portrait.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "About Portrait",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1783242940000,
+      "canvasData": {
+        "x": 0,
+        "y": 1845
+      },
+      "devMetadata": {
+        "imageSrc": "assets/oratile-about-portrait.png"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "projectName": "Oratile Coaching Website",
+    "designLibrary": null
+  }
+}

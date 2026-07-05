@@ -1,0 +1,193 @@
+{
+  "project": {
+    "name": "Oratile Coaching Website",
+    "path": "C:\\Users\\lerat\\AppData\\Roaming\\TRAE SOLO\\ModularData\\ai-agent\\work-mode-projects\\6a4a1cea1bffef43ee33ddc9\\oratile-coaching-website",
+    "operation": "edit",
+    "deviceType": "desktop",
+    "language": "en",
+    "dashboardMode": false,
+    "replicationMode": null,
+    "sourceUrl": null,
+    "visualSpecExcerpt": null,
+    "styleDefinitionBrief": "Editorial and elegant one-page coaching website with deep navy, warm gold accents, serif display type, line art, and grounded human warmth.",
+    "designRead": "coaching brand site / leaders and professionals / editorial warmth / airy storytelling / avoid corporate tech slickness",
+    "designDials": {
+      "layoutVariance": 4,
+      "motionIntensity": 3,
+      "visualDensity": 2
+    },
+    "styleContinuityAnchors": {
+      "colorSystem": {
+        "primaryColorRole": "Warm gold is the single accent hue for emphasis, rules, buttons, and italic highlights against deep navy and parchment neutrals.",
+        "brandHuePolicy": "Use deep navy as the grounding base and one premium gold family for identity. Avoid secondary brand hues and keep colour language restrained.",
+        "stateColors": "Semantic states may be neutral-led only; no extra saturated systems are needed for this project."
+      },
+      "shapeSystem": "Hairline rules, restrained 4/8/16px radius scale, circular halos, diamond markers, and thin editorial keylines.",
+      "typographySystem": "Fraunces-style serif for display and quotes, Source Sans 3 for body copy, italic gold accents for signature phrases, uppercase letterspaced eyebrow labels.",
+      "spacingSystem": "Generous vertical whitespace, narrow readable text columns, asymmetric editorial breathing room, and clean section pacing.",
+      "componentLanguage": "Magazine-like sections, timeline chapters, hairline card grid, underlined text links, and buttons that feel tailored rather than app-like.",
+      "surfaceAndDepth": "Mostly flat surfaces with borders and soft glow only in the hero. Shadows remain subtle and never become the design language.",
+      "imageryAndIconography": "Use the uploaded portrait motion asset as a refined moving portrait and pair it with a custom gold line-art emblem. No stock photography.",
+      "interactionTone": "Calm hover movement, subtle reveal choreography, and respectful reduced-motion fallbacks."
+    },
+    "specsConstraints": null,
+    "sharedProjectShellContract": null,
+    "generationTree": null
+  },
+  "designSource": {
+    "operatingMode": "free-explore",
+    "libraryIdentity": {
+      "name": null,
+      "id": null,
+      "version": null,
+      "scope": null,
+      "path": null,
+      "versionSource": null
+    },
+    "cssFilePath": "C:\\Users\\lerat\\AppData\\Roaming\\TRAE SOLO\\ModularData\\ai-agent\\work-mode-projects\\6a4a1cea1bffef43ee33ddc9\\oratile-coaching-website\\colors_and_type.css",
+    "brandPrefix": "oratile",
+    "themeMode": "light",
+    "designDecisionSummary": "Editorial premium coaching site using deep navy, warm gold, serif display typography, line-art symbolism, film-grain navy bands, and restrained motion.",
+    "componentContractKind": null,
+    "forbiddenInventedComponents": [],
+    "allowedComponents": [],
+    "styleConstraints": {
+      "radiusMax": 16,
+      "spacingBase": 4,
+      "fontSizeBody": 18,
+      "fontSizeMin": 13,
+      "controlHeightDefault": 48,
+      "controlHeightLarge": 56
+    },
+    "productContext": {
+      "kitType": "editorial-coaching-brand",
+      "productType": "personal and leadership coaching practice"
+    },
+    "actualTokenNameReference": [
+      {
+        "semanticPurpose": "Background",
+        "tokenName": "oratile-background"
+      },
+      {
+        "semanticPurpose": "Surface",
+        "tokenName": "oratile-surface"
+      },
+      {
+        "semanticPurpose": "Primary accent",
+        "tokenName": "oratile-primary"
+      },
+      {
+        "semanticPurpose": "Primary accent strong",
+        "tokenName": "oratile-primary-strong"
+      },
+      {
+        "semanticPurpose": "Base text",
+        "tokenName": "oratile-text"
+      },
+      {
+        "semanticPurpose": "Muted text",
+        "tokenName": "oratile-text-soft"
+      },
+      {
+        "semanticPurpose": "Deep navy",
+        "tokenName": "oratile-navy"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "nodeId": "page-index",
+      "slug": "index",
+      "title": "Home",
+      "htmlSrc": "pages/index.html",
+      "pageIndex": 1,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "showcase",
+      "businessScenario": "One-page website for a personal and leadership coaching practice in eMalahleni, Mpumalanga.",
+      "visualNorthStar": "A grounded editorial portrait of a coach whose authority feels humane, intelligent, and quietly premium.",
+      "compositionPattern": "Editorial split hero with narrative bands and gallery-like pacing",
+      "continuityAnchors": [
+        "deep navy and warm gold palette",
+        "serif display typography with italic gold highlights",
+        "hairline rules and diamond markers",
+        "refined motion with reduced-motion support"
+      ],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": [
+        "hero headline wrapping",
+        "maintaining editorial restraint on mobile",
+        "keeping motion subtle and accessible"
+      ]
+    },
+    {
+      "nodeId": "page-index-about-portrait",
+      "slug": "index-about-portrait",
+      "title": "Home - About Portrait",
+      "htmlSrc": "pages/index-about-portrait.html",
+      "pageIndex": 2,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "comparison-from-source",
+      "sourcePageId": "page-index",
+      "sourceHtmlSrc": "pages/index.html",
+      "pageType": "showcase",
+      "businessScenario": "Comparison version of the one-page coaching website with a still portrait added to the About Oratile section.",
+      "visualNorthStar": "Preserve the same editorial warmth while grounding the About section with a direct portrait that feels personal and trustworthy.",
+      "compositionPattern": "Editorial split hero with narrative bands and gallery-like pacing",
+      "continuityAnchors": [
+        "deep navy and warm gold palette",
+        "serif display typography with italic gold highlights",
+        "hairline rules and diamond markers",
+        "refined motion with reduced-motion support"
+      ],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": [
+        "oratile-about-portrait.png"
+      ],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": [
+        "portrait framing in the about section",
+        "preserving the original page rhythm",
+        "keeping the new image elegant on mobile"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "filename": "oratile-portrait-motion.mp4",
+      "role": "shared-brand",
+      "owningPage": "index",
+      "semanticDescription": "Animated portrait asset used as a refined moving portrait in the hero and about sections.",
+      "status": "reused"
+    },
+    {
+      "filename": "oratile-about-portrait.png",
+      "role": "supporting-content",
+      "owningPage": "index-about-portrait",
+      "semanticDescription": "Still portrait of Oratile Mogajane for the About section of the updated comparison page.",
+      "status": "reused"
+    }
+  ],
+  "wiringPlan": [],
+  "hiddenInteractionPlan": []
+}

@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oratile Coaching</title>
+    <style id="theme-vars">
+:root {
+  --oratile-background: #fbf8f2;
+  --oratile-surface: #fffdfa;
+  --oratile-surface-alt: #f3ede3;
+  --oratile-surface-strong: #e8ddcb;
+  --oratile-text: #18233f;
+  --oratile-text-soft: #4f5970;
+  --oratile-text-muted: #6e7688;
+  --oratile-primary: #d89a2b;
+  --oratile-primary-strong: #b47b15;
+  --oratile-primary-soft: #f3c264;
+  --oratile-primary-rgb: 216, 154, 43;
+  --oratile-navy: #0e1834;
+  --oratile-navy-soft: #17264d;
+  --oratile-rule: rgba(14, 24, 52, 0.14);
+  --oratile-rule-strong: rgba(216, 154, 43, 0.45);
+  --oratile-focus: rgba(216, 154, 43, 0.35);
+  --oratile-shadow: 0 24px 70px rgba(14, 24, 52, 0.05);
+  --oratile-shadow-soft: 0 12px 30px rgba(14, 24, 52, 0.04);
+  --oratile-radius-sm: 4px;
+  --oratile-radius-md: 8px;
+  --oratile-radius-lg: 16px;
+  --oratile-radius-full: 9999px;
+  --oratile-font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --oratile-font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+
+.oratile-display {
+  font-family: var(--oratile-font-display);
+}
+
+.oratile-body {
+  font-family: var(--oratile-font-body);
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--oratile-background);
+    --color-primary: var(--oratile-primary);
+  }
+  @layer base {
+    body { background: var(--oratile-background); color: var(--oratile-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-mark">Oratile Coaching</span>
+          <span class="brand-sub">eMalahleni, Mpumalanga</span>
+        </div>
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#journey">Journey</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a class="header-cta" href="#contact">Book a conversation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Oratile Coaching</span>
+            <div class="hero-kicker" aria-label="Coaching highlights">
+              <span>Personal and leadership coaching</span>
+              <span>Warm, grounded practice</span>
+              <span>Founded by Oratile Mogajane</span>
+            </div>
+            <h1 class="hero-title">Grow your mind.<span class="accent-italic">Transform your life.</span></h1>
+            <p>
+              Personal and leadership coaching for people carrying real responsibility. Rooted in lived experience across engineering, mining leadership, farming, and certified coaching, the practice helps clients think clearly, lead steadily, and grow with intention.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="#contact">Book a conversation</a>
+              <a class="button-link" href="#about">Meet Oratile</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <figure class="emblem-card" aria-label="Mind-tree emblem">
+              <svg class="hero-emblem" viewBox="0 0 320 320" role="img" aria-labelledby="emblem-title emblem-desc">
+                <title id="emblem-title">Mind-tree emblem</title>
+                <desc id="emblem-desc">A golden tree of thought within a circular halo, held by two cupped hands.</desc>
+                <defs>
+                  <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f3c264"></stop>
+                    <stop offset="100%" stop-color="#b47b15"></stop>
+                  </linearGradient>
+                </defs>
+                <circle class="gold-stroke halo" data-draw cx="160" cy="150" r="111"></circle>
+                <path class="gold-stroke hands" data-draw d="M71 226c17 0 28-11 41-30c8-12 20-19 32-19c8 0 13 3 16 9c3-6 8-9 16-9c12 0 24 7 32 19c13 19 24 30 41 30"></path>
+                <path class="gold-stroke tree" data-draw d="M160 193v-70M160 145c-9-18-26-29-40-34M160 137c12-20 28-31 42-36M160 165c-17-14-34-18-54-16M160 157c14-13 35-18 56-17M160 117c-3-19 6-34 17-44M160 118c4-19-5-34-18-44"></path>
+                <path class="thin-stroke tree" data-draw d="M122 111c9-9 17-14 29-18M199 103c-7-8-17-14-31-18M130 149c13-3 21-4 30-3M188 146c11-1 19 0 30 3"></path>
+                <circle class="blossom" cx="111" cy="104" r="5"></circle>
+                <circle class="blossom" cx="132" cy="88" r="4.8"></circle>
+                <circle class="blossom" cx="155" cy="74" r="5.4"></circle>
+                <circle class="blossom" cx="184" cy="78" r="5"></circle>
+                <circle class="blossom" cx="209" cy="96" r="4.8"></circle>
+                <circle class="blossom" cx="217" cy="127" r="4.6"></circle>
+                <circle class="blossom" cx="102" cy="134" r="4.8"></circle>
+                <circle class="blossom" cx="133" cy="126" r="4.7"></circle>
+                <circle class="blossom" cx="189" cy="120" r="4.6"></circle>
+              </svg>
+              <figcaption class="emblem-caption">A visual echo of the logo, redrawn as thought, growth, and care.</figcaption>
+            </figure>
+
+            <figure class="motion-card">
+              <div class="motion-frame">
+                <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Animated portrait of Oratile Mogajane">
+                  <source src="../assets/oratile-portrait-motion.mp4" type="video/mp4">
+                </video>
+              </div>
+              <figcaption class="motion-caption">Presence shaped by reflection, leadership, and grounded work.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">The Journey</span>
+            <h2>Four chapters. One steady thread.</h2>
+            <p>Each chapter carries its own discipline, but together they describe the same commitment: helping people work, lead, and live with more clarity.</p>
+          </div>
+          <div class="journey-grid">
+            <article class="chapter reveal">
+              <span class="chapter-label">Chapter I</span>
+              <h3>The Engineer</h3>
+              <p>He began in engineering, learning how systems work, how pressure behaves, and why disciplined thinking creates dependable outcomes.</p>
+            </article>
+            <article class="chapter reveal">
+              <span class="chapter-label">Chapter II</span>
+              <h3>The Mining Leader</h3>
+              <p>In the Witbank coalfields, he discovered that technical skill matters, but leadership is ultimately about people, trust, and responsibility.</p>
+            </article>
+            <article class="chapter reveal">
+              <span class="chapter-label">Chapter III</span>
+              <h3>The Farmer</h3>
+              <p>Through Khumotaka, a family livestock enterprise in Zeerust, he stayed close to land, patience, stewardship, and the values that sustain real growth.</p>
+            </article>
+            <article class="chapter reveal">
+              <span class="chapter-label">Chapter IV</span>
+              <h3>The Coach</h3>
+              <p>Certified through the Transformation Coaching Academy, he now brings those lived chapters into a coaching practice that is practical, humane, and deeply attentive.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-portrait reveal">
+            <div class="about-frame about-frame-still">
+              <img class="about-still" src="../assets/oratile-about-portrait.png" alt="Portrait of Oratile Mogajane">
+            </div>
+            <p class="about-caption">An empath with an engineer's discipline, bringing warmth without losing structure.</p>
+          </div>
+
+          <div class="about-copy reveal">
+            <span class="eyebrow">About Oratile</span>
+            <h2>Grounded insight, lived leadership.</h2>
+            <p>
+              Oratile Mogajane coaches from a place that is both thoughtful and tested. His work is shaped by years in demanding environments where calm judgement, accountability, and relational intelligence mattered every day.
+            </p>
+            <p>
+              That combination is what clients often feel in the room: someone who listens with care, names what matters, and helps turn reflection into practical movement. The result is not coaching that floats above life, but coaching that meets life as it is and helps reshape it with purpose.
+            </p>
+            <p class="muted-copy">
+              Based in eMalahleni, Mpumalanga, the practice supports individuals, emerging leaders, seasoned managers, and teams who want growth that is meaningful and sustainable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-band" aria-label="Key quotation">
+        <div class="container quote-wrap reveal">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p class="quote-text">Machines are the easy part. People are the real work, and the real reward.</p>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">Services</span>
+            <h2>Support shaped to the work you carry.</h2>
+            <p>Every engagement is designed to be honest, practical, and appropriately paced for the season you are in.</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span class="service-number">No. I</span>
+              <h3>Leadership &amp; Management Coaching</h3>
+              <p>For leaders who need to strengthen judgement, communication, confidence, and the ability to guide people well under pressure.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-number">No. II</span>
+              <h3>Career &amp; Transition Coaching</h3>
+              <p>For professionals facing change, promotion, uncertainty, or the need to make wise decisions about what comes next.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-number">No. III</span>
+              <h3>Personal Transformation Coaching</h3>
+              <p>For people seeking clearer thinking, healthier patterns, stronger inner alignment, and change that reaches everyday life.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-number">No. IV</span>
+              <h3>Team Development Workshops</h3>
+              <p>For teams who want honest reflection, practical alignment, and a healthier way of working together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="approach">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="eyebrow">Approach</span>
+            <h2>How the work unfolds.</h2>
+            <p>The method is personal without becoming vague, and structured without becoming rigid.</p>
+          </div>
+          <div class="approach-list">
+            <article class="approach-item reveal">
+              <span class="approach-number">1</span>
+              <div>
+                <h3>Listening first</h3>
+                <p>The work begins with attention. Before strategy, there is space to understand what is truly being carried, avoided, or asked.</p>
+              </div>
+            </article>
+            <article class="approach-item reveal">
+              <span class="approach-number">2</span>
+              <div>
+                <h3>Practical growth</h3>
+                <p>Insight matters only when it changes how you move. Every session aims to translate awareness into real choices and visible progress.</p>
+              </div>
+            </article>
+            <article class="approach-item reveal">
+              <span class="approach-number">3</span>
+              <div>
+                <h3>Accountability with care</h3>
+                <p>You will be challenged, but never handled harshly. The practice balances honesty with respect, structure with humanity.</p>
+              </div>
+            </article>
+            <article class="approach-item reveal">
+              <span class="approach-number">4</span>
+              <div>
+                <h3>Rooted values</h3>
+                <p>Growth lasts when it is grounded. The process stays close to integrity, stewardship, responsibility, and the kind of leadership that can be lived.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-strip" aria-label="Wider portfolio note">
+        <div class="container reveal">
+          <div class="portfolio-mark" aria-hidden="true"><span>K</span></div>
+          <div class="portfolio-text">
+            <strong>Khumotaka</strong>
+            <p>The wider portfolio includes Khumotaka, a family livestock enterprise in Zeerust. Its quiet lessons in patience, stewardship, and grounded responsibility continue to shape the coaching work.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid reveal">
+          <div class="footer-copy">
+            <span class="eyebrow">Contact</span>
+            <h2>Begin with a conversation.</h2>
+            <p>If you are looking for coaching that is reflective, practical, and genuinely human, you are welcome to get in touch.</p>
+          </div>
+          <ul class="contact-list" aria-label="Contact details">
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+27731786971">073 178 6971</a>
+            </li>
+            <li>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/27731786971" target="_blank" rel="noreferrer">wa.me/27731786971</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:ora@oratilecoaching.co.za">ora@oratilecoaching.co.za</a>
+            </li>
+            <li>
+              <strong>Web</strong>
+              <a href="https://www.oratilecoaching.co.za" target="_blank" rel="noreferrer">www.oratilecoaching.co.za</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-tail reveal">
+          <span>Oratile Coaching, eMalahleni, Mpumalanga, South Africa</span>
+          <span class="footer-tagline">Grow your mind. Transform your life.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <style>
+    :root {
+      --bg: #fbf8f2;
+      --surface: #fffdfa;
+      --surface-alt: #f3ede3;
+      --surface-strong: #e7dcc8;
+      --text: #18233f;
+      --text-soft: #4f5970;
+      --text-muted: #697284;
+      --navy: #0e1834;
+      --navy-soft: #17264d;
+      --gold: #d89a2b;
+      --gold-soft: #f3c264;
+      --gold-strong: #b47b15;
+      --gold-rgb: 216, 154, 43;
+      --rule: rgba(14, 24, 52, 0.14);
+      --rule-gold: rgba(216, 154, 43, 0.48);
+      --shadow: 0 24px 70px rgba(14, 24, 52, 0.08);
+      --shadow-soft: 0 14px 28px rgba(14, 24, 52, 0.05);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --content-width: min(1180px, calc(100vw - 2.5rem));
+      --display: "Fraunces", Georgia, "Times New Roman", serif;
+      --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      --grain-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.06) 0 1px, transparent 1px),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0 1px, transparent 1px),
+        radial-gradient(circle at 10% 80%, rgba(255,255,255,0.04) 0 1px, transparent 1px),
+        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.04) 0 1px, transparent 1px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--body);
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(243, 194, 100, 0.09), transparent 38%),
+        linear-gradient(180deg, #fffdf9 0%, var(--bg) 24%, #f8f3ea 100%);
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(var(--gold-rgb), 0.28);
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+
+    .page-shell {
+      overflow: clip;
+    }
+
+    .section {
+      position: relative;
+      padding: clamp(4.5rem, 8vw, 7rem) 0;
+    }
+
+    .container {
+      width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    .section-intro {
+      display: grid;
+      gap: 0.85rem;
+      margin-bottom: 2.5rem;
+      max-width: 42rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "";
+      height: 1px;
+      width: 2.2rem;
+      background: currentColor;
+      opacity: 0.55;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: var(--display);
+      font-weight: 300;
+      line-height: 1.06;
+      text-wrap: balance;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    h2 {
+      font-size: clamp(2.4rem, 5vw, 4.45rem);
+    }
+
+    h3 {
+      font-size: clamp(1.4rem, 2vw, 1.9rem);
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--text-soft);
+    }
+
+    .accent-italic {
+      font-style: italic;
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold-strong));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hairline {
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, var(--rule), transparent);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(251, 248, 242, 0.82);
+      border-bottom: 1px solid rgba(14, 24, 52, 0.08);
+    }
+
+    .site-header .container {
+      min-height: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .brand-mark {
+      font-family: var(--display);
+      font-size: 1.2rem;
+      letter-spacing: 0.03em;
+      color: var(--navy);
+    }
+
+    .brand-sub {
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .header-nav a {
+      font-size: 0.92rem;
+      color: var(--text-soft);
+      position: relative;
+    }
+
+    .header-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.35rem;
+      width: 100%;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 220ms ease;
+    }
+
+    .header-nav a:hover::after,
+    .header-nav a:focus-visible::after {
+      transform: scaleX(1);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.9rem;
+      padding: 0.78rem 1.35rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold-strong));
+      color: var(--navy);
+      font-weight: 700;
+      box-shadow: 0 12px 20px rgba(var(--gold-rgb), 0.15);
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .header-cta:hover,
+    .header-cta:focus-visible,
+    .button-primary:hover,
+    .button-primary:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 26px rgba(var(--gold-rgb), 0.18);
+    }
+
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(circle at 78% 24%, rgba(var(--gold-rgb), 0.34), transparent 18%),
+        radial-gradient(circle at 75% 40%, rgba(var(--gold-rgb), 0.12), transparent 24%),
+        linear-gradient(135deg, var(--navy) 0%, #101c3f 58%, #0c142e 100%);
+      color: #eef2fb;
+      isolation: isolate;
+      padding-top: clamp(5rem, 8vw, 7rem);
+      padding-bottom: clamp(4rem, 8vw, 6.5rem);
+    }
+
+    .hero::before,
+    .quote-band::before,
+    .portfolio-strip::before,
+    .site-footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: var(--grain-image);
+      background-size: 160px 160px;
+      opacity: 0.22;
+      pointer-events: none;
+      mix-blend-mode: soft-light;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.09), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,0.02), transparent 20%, rgba(0,0,0,0.12));
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: clamp(2rem, 4vw, 4.5rem);
+      align-items: center;
+    }
+
+    .hero-copy {
+      display: grid;
+      gap: 1.35rem;
+      max-width: 39rem;
+    }
+
+    .hero-copy .eyebrow {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .hero-copy p {
+      color: rgba(238, 242, 251, 0.82);
+      max-width: 34rem;
+      font-size: 1.1rem;
+    }
+
+    .hero-kicker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+      color: rgba(255,255,255,0.78);
+      font-size: 0.95rem;
+    }
+
+    .hero-kicker span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .hero-kicker span::before {
+      content: "◆";
+      color: var(--gold-soft);
+      font-size: 0.7rem;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 7vw, 6.4rem);
+      font-weight: 300;
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+      max-width: 10ch;
+    }
+
+    .hero-title .accent-italic {
+      display: block;
+      font-size: 0.86em;
+      margin-top: 0.2em;
+      line-height: 1;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.15rem;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+
+    .button-primary,
+    .button-link {
+      min-height: 3.45rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button-primary {
+      padding: 0.95rem 1.6rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold-soft), var(--gold-strong));
+      color: var(--navy);
+      font-weight: 700;
+      box-shadow: 0 14px 24px rgba(var(--gold-rgb), 0.14);
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .button-link {
+      color: #f4ebdc;
+      text-decoration: underline;
+      text-decoration-color: rgba(243, 194, 100, 0.8);
+      text-underline-offset: 0.28rem;
+      transition: color 220ms ease, text-decoration-color 220ms ease;
+    }
+
+    .button-link:hover,
+    .button-link:focus-visible {
+      color: #ffffff;
+      text-decoration-color: var(--gold-soft);
+    }
+
+    .hero-visual {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      gap: 1.5rem;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      width: min(32rem, 80%);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(var(--gold-rgb), 0.22), transparent 62%);
+      filter: blur(24px);
+      opacity: 0.85;
+      top: 1.2rem;
+      z-index: 0;
+    }
+
+    .emblem-card,
+    .motion-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .emblem-card {
+      width: min(26rem, 100%);
+      padding: clamp(1rem, 2vw, 1.3rem);
+      border-radius: 1.6rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(243, 194, 100, 0.16);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 20px 50px rgba(0,0,0,0.18);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-emblem {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+
+    .hero-emblem .gold-stroke {
+      fill: none;
+      stroke: url(#goldStroke);
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .hero-emblem .thin-stroke {
+      fill: none;
+      stroke: rgba(243, 194, 100, 0.95);
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .hero-emblem [data-draw] {
+      stroke-dasharray: var(--path-length, 400);
+      stroke-dashoffset: var(--path-length, 400);
+      animation: draw-line 1.35s ease forwards;
+    }
+
+    .hero-emblem .halo {
+      --path-length: 760;
+      animation-delay: 0.1s;
+    }
+
+    .hero-emblem .hands {
+      --path-length: 420;
+      animation-delay: 0.6s;
+    }
+
+    .hero-emblem .tree {
+      --path-length: 540;
+      animation-delay: 1.05s;
+    }
+
+    .hero-emblem .blossom {
+      fill: var(--gold-soft);
+      opacity: 0;
+      transform-origin: center;
+      transform: scale(0.2);
+      animation: bloom 0.55s ease forwards;
+    }
+
+    .hero-emblem .blossom:nth-of-type(1) { animation-delay: 1.5s; }
+    .hero-emblem .blossom:nth-of-type(2) { animation-delay: 1.65s; }
+    .hero-emblem .blossom:nth-of-type(3) { animation-delay: 1.8s; }
+    .hero-emblem .blossom:nth-of-type(4) { animation-delay: 1.95s; }
+    .hero-emblem .blossom:nth-of-type(5) { animation-delay: 2.1s; }
+    .hero-emblem .blossom:nth-of-type(6) { animation-delay: 2.25s; }
+    .hero-emblem .blossom:nth-of-type(7) { animation-delay: 2.4s; }
+    .hero-emblem .blossom:nth-of-type(8) { animation-delay: 2.55s; }
+    .hero-emblem .blossom:nth-of-type(9) { animation-delay: 2.7s; }
+
+    .emblem-caption {
+      margin-top: 0.95rem;
+      text-align: center;
+      color: rgba(244, 239, 229, 0.78);
+      font-size: 0.92rem;
+      font-style: italic;
+    }
+
+    .motion-card {
+      width: min(24rem, 82%);
+      margin-left: auto;
+      transform: translateY(-1.6rem);
+    }
+
+    .motion-frame {
+      position: relative;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(243, 194, 100, 0.22);
+    }
+
+    .motion-frame::before {
+      content: "";
+      position: absolute;
+      inset: -1.1rem 1.1rem 1.1rem -1.1rem;
+      border: 1px solid rgba(243, 194, 100, 0.55);
+      border-radius: 1.25rem;
+      z-index: -1;
+    }
+
+    .motion-frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14, 24, 52, 0.06), rgba(14, 24, 52, 0.24));
+      pointer-events: none;
+    }
+
+    .motion-frame video {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: linear-gradient(180deg, rgba(243, 194, 100, 0.12), rgba(255,255,255,0.02));
+    }
+
+    .motion-caption {
+      margin-top: 1rem;
+      text-align: right;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.94rem;
+      font-style: italic;
+    }
+
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.4rem;
+      position: relative;
+    }
+
+    .journey-grid::before {
+      content: "";
+      position: absolute;
+      top: 0.6rem;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0, var(--rule-gold) 12%, var(--rule-gold) 88%, transparent 100%);
+    }
+
+    .chapter {
+      position: relative;
+      padding-top: 2rem;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .chapter::before {
+      content: "";
+      width: 0.8rem;
+      height: 0.8rem;
+      border: 1px solid var(--gold);
+      background: var(--surface);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0.2rem;
+      left: 0.2rem;
+      box-shadow: 0 0 0 0.3rem rgba(var(--gold-rgb), 0.08);
+    }
+
+    .chapter-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+    }
+
+    .chapter h3 {
+      max-width: 9ch;
+    }
+
+    .chapter p {
+      font-size: 0.98rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .about-portrait {
+      position: relative;
+    }
+
+    .about-frame {
+      position: relative;
+      border-radius: 1.2rem;
+      overflow: hidden;
+      background: var(--surface-alt);
+      box-shadow: var(--shadow);
+    }
+
+    .about-frame::before {
+      content: "";
+      position: absolute;
+      inset: 1.25rem -1.1rem -1.1rem 1.25rem;
+      border: 1px solid rgba(216, 154, 43, 0.58);
+      border-radius: 1.2rem;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .about-frame video {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: linear-gradient(180deg, rgba(var(--gold-rgb), 0.12), rgba(14, 24, 52, 0.08));
+    }
+
+    .about-frame-still {
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      background:
+        radial-gradient(circle at top, rgba(var(--gold-rgb), 0.18), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,0.95), rgba(243, 237, 227, 0.9));
+    }
+
+    .about-still {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      filter: saturate(1.02) contrast(1.01);
+    }
+
+    .about-caption {
+      margin-top: 1rem;
+      max-width: 24rem;
+      font-style: italic;
+      color: var(--text-soft);
+    }
+
+    .about-copy {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .about-copy p {
+      font-size: 1.08rem;
+      max-width: 38rem;
+    }
+
+    .about-copy p:first-of-type::first-letter {
+      float: left;
+      font-family: var(--display);
+      font-size: 4.7rem;
+      line-height: 0.78;
+      padding-right: 0.5rem;
+      color: var(--gold-strong);
+    }
+
+    .quote-band {
+      position: relative;
+      background:
+        linear-gradient(135deg, var(--navy) 0%, #101d3f 100%);
+      color: #f7f3eb;
+      overflow: hidden;
+      padding: clamp(4rem, 6vw, 5.3rem) 0;
+    }
+
+    .quote-wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 58rem;
+    }
+
+    .quote-mark {
+      position: absolute;
+      top: -1.6rem;
+      left: -0.2rem;
+      font-family: var(--display);
+      font-size: clamp(7rem, 16vw, 14rem);
+      line-height: 1;
+      color: rgba(var(--gold-rgb), 0.16);
+    }
+
+    .quote-text {
+      position: relative;
+      padding-left: clamp(2rem, 8vw, 5rem);
+      font-family: var(--display);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+      color: #f5efe3;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(14, 24, 52, 0.12);
+      border: 1px solid rgba(14, 24, 52, 0.12);
+    }
+
+    .service-card {
+      position: relative;
+      background: rgba(255, 253, 250, 0.9);
+      padding: 1.7rem;
+      min-height: 16rem;
+      display: grid;
+      align-content: start;
+      gap: 1rem;
+      overflow: hidden;
+      transition: transform 220ms ease, background-color 220ms ease;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      left: 1.7rem;
+      right: 1.7rem;
+      top: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: translateX(-110%);
+      transition: transform 320ms ease;
+    }
+
+    .service-card:hover,
+    .service-card:focus-within {
+      transform: translateY(-2px);
+      background: #fffdf9;
+    }
+
+    .service-card:hover::before,
+    .service-card:focus-within::before {
+      transform: translateX(0);
+    }
+
+    .service-number {
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .service-card h3 {
+      max-width: 12ch;
+    }
+
+    .approach-list {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .approach-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1rem 1.25rem;
+      align-items: start;
+      padding: 1.2rem 0;
+      border-top: 1px solid rgba(14, 24, 52, 0.12);
+    }
+
+    .approach-item:last-child {
+      border-bottom: 1px solid rgba(14, 24, 52, 0.12);
+    }
+
+    .approach-number {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(216, 154, 43, 0.4);
+      color: var(--gold-strong);
+      font-family: var(--display);
+      font-size: 1.05rem;
+      flex-shrink: 0;
+    }
+
+    .approach-item h3 {
+      margin-bottom: 0.35rem;
+      font-size: 1.5rem;
+    }
+
+    .portfolio-strip {
+      position: relative;
+      background: linear-gradient(135deg, var(--navy) 0%, #132248 100%);
+      color: #edf2fb;
+      padding: 2.25rem 0;
+    }
+
+    .portfolio-strip .container {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      gap: 1.4rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .portfolio-mark {
+      width: 3.5rem;
+      height: 3.5rem;
+      transform: rotate(45deg);
+      border: 1px solid rgba(243, 194, 100, 0.72);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .portfolio-mark span {
+      transform: rotate(-45deg);
+      color: var(--gold-soft);
+      font-family: var(--display);
+      font-size: 1.35rem;
+      font-style: italic;
+    }
+
+    .portfolio-text strong {
+      display: block;
+      margin-bottom: 0.15rem;
+      color: #fff4de;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .portfolio-text p {
+      color: rgba(237, 242, 251, 0.78);
+    }
+
+    .site-footer {
+      position: relative;
+      background:
+        linear-gradient(135deg, var(--navy) 0%, #0b142f 100%);
+      color: #eef1fa;
+      padding: 4rem 0 2.2rem;
+      overflow: hidden;
+    }
+
+    .footer-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+      gap: 2rem 3rem;
+      align-items: start;
+    }
+
+    .footer-copy {
+      display: grid;
+      gap: 0.95rem;
+      max-width: 33rem;
+    }
+
+    .footer-copy p {
+      color: rgba(238, 241, 250, 0.78);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 0.85rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .contact-list li {
+      display: grid;
+      grid-template-columns: 6.4rem minmax(0, 1fr);
+      gap: 1rem;
+      align-items: baseline;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-list strong {
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.78rem;
+      color: rgba(243, 194, 100, 0.8);
+    }
+
+    .contact-list a {
+      color: #f7f1e5;
+      text-decoration: underline;
+      text-decoration-color: rgba(243, 194, 100, 0.55);
+      text-underline-offset: 0.22rem;
+      word-break: break-word;
+    }
+
+    .footer-tail {
+      position: relative;
+      z-index: 1;
+      margin-top: 2.1rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(238, 241, 250, 0.66);
+      font-size: 0.95rem;
+    }
+
+    .footer-tagline {
+      font-family: var(--display);
+      font-style: italic;
+      color: var(--gold-soft);
+      font-size: 1.2rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .muted-copy {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    @keyframes draw-line {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes bloom {
+      0% {
+        opacity: 0;
+        transform: scale(0.2);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1.12);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .about-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .motion-card {
+        margin-left: 0;
+        width: min(24rem, 88%);
+        transform: translateY(0);
+      }
+
+      .hero-copy {
+        max-width: none;
+      }
+
+      .journey-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 2rem;
+      }
+
+      .journey-grid::before {
+        display: none;
+      }
+
+      .portfolio-strip .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        --content-width: min(100vw - 1.5rem, 40rem);
+      }
+
+      .site-header .container {
+        padding: 0.8rem 0;
+        align-items: start;
+      }
+
+      .header-nav {
+        gap: 0.9rem 1rem;
+      }
+
+      .hero-copy p,
+      .about-copy p,
+      p {
+        font-size: 1rem;
+      }
+
+      .hero-title {
+        font-size: clamp(2.6rem, 12vw, 4.2rem);
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .button-primary,
+      .button-link,
+      .header-cta {
+        width: 100%;
+      }
+
+      .services-grid,
+      .journey-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .about-frame::before,
+      .motion-frame::before {
+        inset: 0.8rem -0.7rem -0.7rem 0.8rem;
+      }
+
+      .quote-text {
+        padding-left: 1.5rem;
+      }
+
+      .contact-list li {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      .footer-tail {
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .hero-emblem [data-draw],
+      .hero-emblem .blossom {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const revealItems = document.querySelectorAll('.reveal');
+      const motionVideos = document.querySelectorAll('.motion-video');
+
+      const applyMotionPreference = () => {
+        motionVideos.forEach((video) => {
+          if (reduceMotion.matches) {
+            video.autoplay = false;
+            video.loop = false;
+            video.pause();
+            const settleFrame = () => {
+              try {
+                video.currentTime = 0.1;
+              } catch (error) {
+              }
+            };
+            if (video.readyState >= 2) {
+              settleFrame();
+            } else {
+              video.addEventListener('loadeddata', settleFrame, { once: true });
+            }
+          } else {
+            video.loop = true;
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+              playPromise.catch(() => {});
+            }
+          }
+        });
+      };
+
+      applyMotionPreference();
+      if (typeof reduceMotion.addEventListener === 'function') {
+        reduceMotion.addEventListener('change', applyMotionPreference);
+      } else if (typeof reduceMotion.addListener === 'function') {
+        reduceMotion.addListener(applyMotionPreference);
+      }
+
+      if (!reduceMotion.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.16,
+          rootMargin: '0px 0px -8% 0px'
+        });
+
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+      }
+    }());
+  </script>
+</body>
+</html>
