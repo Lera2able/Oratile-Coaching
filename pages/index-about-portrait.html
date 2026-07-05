@@ -140,7 +140,7 @@
             <figure class="motion-card">
               <div class="motion-frame">
                 <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Looping hero video of Oratile Mogajane" defaultMuted>
-                  <source src="../assets/oratile-hero-loop.mp4" type="video/mp4">
+                  <source src="https://cdn.jsdelivr.net/gh/Lera2able/Oratile-Coaching@main/assets/oratile-hero-loop.mp4" type="video/mp4">
                 </video>
               </div>
               <figcaption class="motion-caption">A quiet moving portrait that adds warmth without overpowering the page.</figcaption>
@@ -829,6 +829,10 @@
       width: min(24rem, 82%);
       margin-left: auto;
       transform: translateY(-1.6rem);
+    }
+
+    .motion-card.is-hidden {
+      display: none;
     }
 
     .motion-frame {
@@ -1540,6 +1544,22 @@
           }
         });
       };
+
+      const hideBrokenVideoCard = (video) => {
+        const card = video.closest('.motion-card');
+        if (card) {
+          card.classList.add('is-hidden');
+        }
+      };
+
+      motionVideos.forEach((video) => {
+        video.addEventListener('error', () => hideBrokenVideoCard(video));
+        window.setTimeout(() => {
+          if (video.readyState < 2) {
+            hideBrokenVideoCard(video);
+          }
+        }, 2600);
+      });
 
       applyMotionPreference();
       if (typeof reduceMotion.addEventListener === 'function') {
