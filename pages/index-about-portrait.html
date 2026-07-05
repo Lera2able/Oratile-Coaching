@@ -137,6 +137,15 @@
               <figcaption class="emblem-caption">A visual echo of the logo, redrawn as thought, growth, and care.</figcaption>
             </figure>
 
+            <figure class="motion-card">
+              <div class="motion-frame">
+                <video class="motion-video" autoplay muted loop playsinline preload="metadata" aria-label="Looping hero video of Oratile Mogajane" defaultMuted>
+                  <source src="../assets/oratile-hero-loop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <figcaption class="motion-caption">A quiet moving portrait that adds warmth without overpowering the page.</figcaption>
+            </figure>
+
           </div>
         </div>
       </section>
@@ -850,8 +859,9 @@
 
     .motion-frame video {
       width: 100%;
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 8 / 9;
       object-fit: cover;
+      object-position: center top;
       background: linear-gradient(180deg, rgba(243, 194, 100, 0.12), rgba(255,255,255,0.02));
     }
 
@@ -1316,16 +1326,61 @@
 
     @media (max-width: 760px) {
       :root {
-        --content-width: min(100vw - 1.5rem, 40rem);
+        --content-width: min(100vw - 1.25rem, 40rem);
+      }
+
+      .site-header {
+        position: static;
       }
 
       .site-header .container {
-        padding: 0.8rem 0;
-        align-items: start;
+        min-height: auto;
+        padding: 0.95rem 0 0.65rem;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .brand {
+        justify-items: center;
+        text-align: center;
       }
 
       .header-nav {
-        gap: 0.9rem 1rem;
+        gap: 0.7rem 0.85rem;
+        justify-content: center;
+      }
+
+      .header-nav a:not(.header-cta) {
+        font-size: 0.84rem;
+      }
+
+      .section {
+        padding: 3.6rem 0;
+      }
+
+      .section-intro {
+        margin-bottom: 2rem;
+      }
+
+      .eyebrow {
+        white-space: normal;
+        row-gap: 0.45rem;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero {
+        padding-top: 3.8rem;
+        padding-bottom: 4rem;
+      }
+
+      .hero-grid {
+        gap: 2rem;
+      }
+
+      .hero-copy {
+        gap: 1rem;
+        text-align: center;
       }
 
       .hero-copy p,
@@ -1334,11 +1389,21 @@
         font-size: 1rem;
       }
 
+      .hero-copy p {
+        max-width: none;
+      }
+
+      .hero-kicker {
+        justify-content: center;
+      }
+
       .hero-title {
-        font-size: clamp(2.6rem, 12vw, 4.2rem);
+        font-size: clamp(2.5rem, 12vw, 4rem);
+        max-width: none;
       }
 
       .hero-actions {
+        gap: 0.9rem;
         align-items: stretch;
       }
 
@@ -1348,13 +1413,50 @@
         width: 100%;
       }
 
+      .hero-visual {
+        width: 100%;
+        max-width: 22rem;
+        margin-inline: auto;
+      }
+
+      .emblem-card,
+      .motion-card {
+        width: 100%;
+      }
+
+      .emblem-card {
+        padding: 0.95rem;
+      }
+
+      .motion-caption,
+      .emblem-caption,
+      .about-caption {
+        text-align: center;
+      }
+
       .services-grid,
       .journey-grid {
         grid-template-columns: 1fr;
       }
 
+      .journey-grid {
+        gap: 1.1rem;
+      }
+
+      .chapter {
+        padding: 1.6rem 1rem 1rem 1.2rem;
+        border: 1px solid rgba(14, 24, 52, 0.1);
+        background: rgba(255, 253, 250, 0.72);
+      }
+
+      .chapter::before {
+        top: 0.75rem;
+        left: 0.9rem;
+      }
+
       .service-card {
         min-height: auto;
+        padding: 1.35rem;
       }
 
       .about-frame::before,
@@ -1411,6 +1513,9 @@
 
       const applyMotionPreference = () => {
         motionVideos.forEach((video) => {
+          video.muted = true;
+          video.defaultMuted = true;
+          video.volume = 0;
           if (reduceMotion.matches) {
             video.autoplay = false;
             video.loop = false;
